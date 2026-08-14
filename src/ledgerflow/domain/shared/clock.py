@@ -13,6 +13,13 @@ class Clock(Protocol):
         """Return the current time."""
 
 
+class SystemClock:
+    """Production time provider for domain logic."""
+
+    def now(self) -> datetime:
+        return datetime.now(timezone.utc)
+
+
 class FakeClock:
     """Simple deterministic clock used in tests and domain-level scenarios."""
 
