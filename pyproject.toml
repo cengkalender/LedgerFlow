@@ -1,0 +1,10 @@
+[project]
+name = "ledgerflow"
+version = "0.1.0"
+description = "LedgerFlow financial management system"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
